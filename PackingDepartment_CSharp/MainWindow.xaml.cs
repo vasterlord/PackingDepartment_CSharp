@@ -90,7 +90,7 @@ namespace PackingDepartment_CSharp
             packingShop.digitalScales.Add(nextProduct);
             dataGrid.ItemsSource = packingShop.digitalScales.Cast<DigitalScales>();
             dataGrid.Items.Refresh();
-            dataGrid.SelectedIndex = 0;
+            dataGrid.SelectedIndex = packingShop.digitalScales.Count-1;
         }
 
         private void buttonDelete_Click(object sender, RoutedEventArgs e)
@@ -120,6 +120,19 @@ namespace PackingDepartment_CSharp
             dataGrid.ItemsSource = packingShop.digitalScales.Cast<DigitalScales>();
             dataGrid.Items.Refresh();
             dataGrid.SelectedIndex = 0;
+        }
+
+        private void buttonAdd_Update_Click(object sender, RoutedEventArgs e)
+        {
+            packingShop[id].MinNumber = Convert.ToDouble(textBoxMinimum.Text);
+            packingShop[id].MaxNumber = Convert.ToDouble(textBoxMaximum.Text);
+            packingShop[id].Number = Convert.ToDouble(textBoxWeight.Text);
+            packingShop[id].OneCost = Convert.ToDouble(textBoxCostOne.Text);
+            packingShop[id].CommonCost = Convert.ToDouble(textBoxCommonCost.Text);
+            packingShop[id].WeightError = Convert.ToDouble(textBoxWeightError.Text);
+            dataGrid.ItemsSource = packingShop.digitalScales.Cast<DigitalScales>();
+            dataGrid.Items.Refresh();
+            dataGrid.SelectedIndex = id;
         }
     }
 }

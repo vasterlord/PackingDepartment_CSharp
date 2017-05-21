@@ -4,14 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PackingDepartment_CSharp"
-        mc:Ignorable="d" 
+        mc:Ignorable="d"  
+        WindowStyle="ToolWindow"
         ResizeMode="NoResize" 
         Background="DarkOrchid"
         Title="Packing department" Height="573.5" Width="845.5">
     <Grid>
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="290,10,0,0" SelectionMode="Single" IsReadOnly="True" EnableColumnVirtualization="false" Foreground="DarkOrchid" FontSize="13"  EnableRowVirtualization="false" AutoGenerateColumns="True" SelectedIndex="0" CanUserAddRows="False" CanUserDeleteRows="False" CanUserReorderColumns="False"  CanUserResizeColumns="False" CanUserResizeRows="False" BorderBrush="Black" VerticalAlignment="Top" Height="281" Width="532" ColumnWidth="1*" SelectionChanged="dataGrid_SelectionChanged"/>
-        <Button x:Name="buttonAdd" Content="Add" FontSize="16" FontStyle="Italic" Background="Black" Foreground="MintCream" HorizontalAlignment="Left" Margin="24,266,0,0" VerticalAlignment="Top" Width="74"/>
-        <Button x:Name="buttonDelete" Content="Delete" FontSize="16" FontStyle="Italic" Background="Black" Foreground="MintCream" HorizontalAlignment="Left" Margin="196,266,0,0" VerticalAlignment="Top" Width="76" Click="buttonDelete_Click_1"/>
+        <Button x:Name="buttonAdd" Content="Add" FontSize="16" FontStyle="Italic" Background="Black" Foreground="MintCream" HorizontalAlignment="Left" Margin="24,266,0,0" VerticalAlignment="Top" Width="74" Click="buttonAdd_Click"/>
+        <Button x:Name="buttonDelete" Content="Delete" FontSize="16" FontStyle="Italic" Background="Black" Foreground="MintCream" HorizontalAlignment="Left" Margin="196,266,0,0" VerticalAlignment="Top" Width="76" Click="buttonDelete_Click"/>
         <Label x:Name="label" Content="Minimum weight" FontSize="15" Foreground="MintCream" HorizontalAlignment="Left" Margin="10,13,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="textBoxMinimum" FontSize="15" HorizontalAlignment="Left" Height="23" Margin="152,17,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Label x:Name="label_Copy" Content="Maximum weight" FontSize="15" Foreground="MintCream" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top"/>
@@ -35,6 +36,6 @@
         <Label x:Name="label_Copy6" Content="Enter common weight for packing products : " FontSize="16" Foreground="MintCream" HorizontalAlignment="Left" Margin="122,306,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="textBoxCommonWeight" FontSize="15" HorizontalAlignment="Left" Height="22" Margin="456,310,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="buttonShowAll" Content="Show all" FontSize="16" FontStyle="Italic" Background="Black" Foreground="MintCream" HorizontalAlignment="Left" Margin="24,308,0,0" VerticalAlignment="Top" Width="74" Click="buttonShowAll_Click"/>
-
+        <Button x:Name="buttonAdd_Update" Content="Update" FontSize="16" FontStyle="Italic" Background="Black" Foreground="MintCream" HorizontalAlignment="Left" Margin="111,266,0,0" VerticalAlignment="Top" Width="74" Click="buttonAdd_Update_Click"/>
     </Grid>
 </Window>
