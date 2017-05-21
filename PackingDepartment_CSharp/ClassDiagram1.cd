@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PackingDepartment_CSharp.App" Collapsed="true">
+    <Position X="8.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PackingDepartment_CSharp.DigitalScales">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAACAAAAAAAAAAAAAABAAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>DigitalScales.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PackingDepartment_CSharp.MainWindow" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EEQAAAAAAAAAAECQAAgAAAAAQAAAAIAAAAAAEAAAAgA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="packingShop" />
+    </ShowAsAssociation>
+    <Lollipop Orientation="Right" Position="1.008" Collapsed="true" />
+  </Class>
+  <Class Name="PackingDepartment_CSharp.PackingShop">
+    <Position X="3.25" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAACAAAAAAAAAABEABCAAAAAAAAAAA=</HashCode>
+      <FileName>PackingShop.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RealNumber" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PackingDepartment_CSharp.RealNumber">
+    <Position X="0.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAaEUEARAAAAAAAAAAAAAAgAAAAgA=</HashCode>
+      <FileName>RealNumber.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PackingDepartment_CSharp.Properties.Resources" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PackingDepartment_CSharp.Properties.Settings" Collapsed="true">
+    <Position X="8.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
