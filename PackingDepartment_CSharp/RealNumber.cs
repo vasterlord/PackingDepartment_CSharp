@@ -105,19 +105,19 @@ namespace PackingDepartment_CSharp
 
         public static RealNumber operator -(RealNumber realNumber, double value)
         {
-            realNumber.Number = realNumber.Number + value;
+            realNumber.Number = realNumber.Number - value;
             return realNumber;
         } 
 
         public static RealNumber operator *(RealNumber realNumber, double value)
         {
-            realNumber.Number = realNumber.Number + value;
+            realNumber.Number = realNumber.Number * value;
             return realNumber;
         } 
 
         public static RealNumber operator /(RealNumber realNumber, double value)
         {
-            realNumber.Number = realNumber.Number  * value;
+            realNumber.Number = realNumber.Number  / value;
             return realNumber;
         }
 
